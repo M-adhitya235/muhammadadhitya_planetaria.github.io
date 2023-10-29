@@ -1,0 +1,104 @@
+body  {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-image: url(galaxy.jpg);
+}
+
+
+/* Mengatur warna latar belakang navbar */
+.navbar {
+  background-color: rgba(52, 49, 68, 0.63);
+}
+
+/* Mengatur warna teks di navbar */
+.navbar a {
+  color: rgb(245, 245, 245);
+}
+
+/* Efek hover untuk tautan di navbar */
+.navbar a:hover {
+  background-color: rgba(104, 104, 233, 0.658);
+  color: black;
+}
+
+.custom-text-color {
+  color: red; /* Ganti "red" dengan warna yang Anda inginkan */
+}
+
+
+/* Konten */
+.konten {
+ display: flex;
+ flex-wrap: wrap; /* Untuk responsif, baris baru jika tidak cukup ruang */
+ justify-content: space-between;
+ margin: 20px;
+}
+
+.planet-kolom, .planet-kolom2 {
+ flex-basis: 48%;
+}
+
+/* Tampilan Planet */
+.planet, .planett {
+  border: 2px solid lightgray;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s; /* Menambahkan efek transisi perubahan warna */
+}
+
+/* Saat dihover, ubah warna latar belakang */
+.planet:hover, .planett:hover {
+  background-color: #436B95;
+}
+
+.planet p, .planett p {
+ margin-bottom : 10px;
+}
+
+.planet a, .planett a {
+ color : white;
+ text-decoration: none;
+}
+
+.planet h2, .planett h2 {
+ margin-top: 10px;
+ margin-right: 0px;
+ color : white;
+}
+
+.planet h2:visited, .planett h2:visited {
+ color: black; 
+}
+
+.planet h2:hover, .planett h2:hover {
+ color: rgb(247, 231, 142); 
+}
+
+/* Jarak Heading 2 */
+.planet h2, .planett h2 {
+ margin-top: 10px;
+}
+
+/* Tampilan Planet Kecil (Responsif) */
+@media (max-width: 767px) {
+ .planet-kolom, .planet-kolom2 {
+   flex-basis: 100%;
+ }
+ .planet, .planett {
+   padding: 10%;
+ }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  background-color: rgba(130, 136, 127, 0.2);
+  color: white;
+  margin : 0px;
+  margin-top : 70px;
+}
