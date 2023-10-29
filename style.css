@@ -5,32 +5,23 @@ body  {
   background-image: url(galaxy.jpg);
 }
 
-
-/* Mengatur warna latar belakang navbar */
 .navbar {
   background-color: rgba(52, 49, 68, 0.63);
 }
 
-/* Mengatur warna teks di navbar */
 .navbar a {
   color: rgb(245, 245, 245);
 }
 
-/* Efek hover untuk tautan di navbar */
+
 .navbar a:hover {
   background-color: rgba(104, 104, 233, 0.658);
   color: black;
 }
 
-.custom-text-color {
-  color: red; /* Ganti "red" dengan warna yang Anda inginkan */
-}
-
-
-/* Konten */
 .konten {
  display: flex;
- flex-wrap: wrap; /* Untuk responsif, baris baru jika tidak cukup ruang */
+ flex-wrap: wrap; 
  justify-content: space-between;
  margin: 20px;
 }
@@ -39,15 +30,13 @@ body  {
  flex-basis: 48%;
 }
 
-/* Tampilan Planet */
 .planet, .planett {
   border: 2px solid lightgray;
   padding: 10px;
   margin-bottom: 15px;
-  transition: background-color 0.3s; /* Menambahkan efek transisi perubahan warna */
+  transition: background-color 0.3s; 
 }
 
-/* Saat dihover, ubah warna latar belakang */
 .planet:hover, .planett:hover {
   background-color: #436B95;
 }
